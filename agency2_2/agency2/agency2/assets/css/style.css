@@ -1,0 +1,253 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.logo {
+    color: #fed136;
+    text-decoration: none;
+}
+
+header {
+    padding: 250px 0;
+    color: #fff;
+    text-align: center;
+    background-image: url(https://jusgift.com/wp-content/uploads/2016/08/accessories-watch-wallet-shades-glasses-bowtie-pen-accessory.jpg?x31303);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+header h2 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 32px;
+}
+
+header h1 {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 72px;
+    margin-bottom: 64px;
+}
+
+header button {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #fed136;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+header button:hover {
+    background-color: #ddb830;
+    cursor: pointer;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: #6c757d3c;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links li a:hover {
+    color: #fed136;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#services {
+    margin: 64px 0;
+}
+
+.services-text h1 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    font-size: 40px;
+}
+
+.services-text p {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Roboto Slab', sans-serif;
+    color: #6c757d;
+}
+
+.services-text {
+    margin-bottom: 64px;
+}
+
+.services {
+    display: flex;
+    text-align: center;
+}
+
+.col {
+    flex: 0 0 33%;
+    max-width: 33%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service-icon i {
+    color: #fff;
+    font-size: 4em;
+}
+
+.service-icon {
+    background-color: #fed136;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    position: relative;
+    border-radius: 100px;
+}
+
+.service-header-text {
+    font-size: 24px;
+}
+
+.service-paragraph {
+    color: #6c757d;
+    line-height: 1.75;
+}
+
+@media screen and (max-width: 740px){
+    .container.mx-auto.navbar{
+        background-color:rgb(29, 29, 37);
+        position: sticky;
+        top: 0;
+    }
+    .logo.font-semibold{
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    .nav-links{
+        display: none;
+    }
+    header{
+        margin-top: -90px;
+
+    }
+    header h2{
+        font-size: 22px;
+    }
+    header h1{
+        font-size: 50px;
+    }
+    header button{
+        margin-top: -40px;
+    }
+    header{
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: 100vh;
+    }
+    #services{
+        margin-top: -70px;
+    }
+    .text-center.services-text p{
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+    }
+    .col{
+        max-width: 70%;
+        margin: auto;
+    }
+}
